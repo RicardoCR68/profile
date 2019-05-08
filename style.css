@@ -12,8 +12,7 @@ a {
 }
 
 a:hover{
-  background-color: black;
-  color: white;
+  color: black;
 }
 
 
@@ -97,7 +96,7 @@ audio {
   margin: 3px;
   margin-left: -60px;
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 1s;
 }
 
 .easter-egg .warning::after {
@@ -126,15 +125,18 @@ audio {
   margin: 5px;
 }
 
-#profile {
-  width: 225px;
-  height: 225px;
+#paunomeucu {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
+  background-image: url("images/ricardo.png");
+  margin: auto;
+
 }
 
-#profile:hover {
-  background: url("images/ricardo.png");
-  z-index: 1;
+#paunomeucu:hover {
+  background-image: url("images/ricardo_milos.gif");
+  transition: opacity 10s;
 }
 
 #socials > ul > li {
