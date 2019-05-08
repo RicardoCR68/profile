@@ -1,0 +1,144 @@
+/* - - - - - - - - - - - HTML TAGS - - - - - - - - - - */
+
+body {
+  background-color: rgb(247, 249, 252);
+  font-size: 13px;
+  font-family: 'Arial';
+  letter-spacing: 2px;
+}
+
+a {
+  color: gray;
+}
+
+a:hover{
+  background-color: black;
+  color: white;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+li {
+  line-height: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  color: lightgrey;
+  margin: auto;
+}
+
+audio {
+  margin: 3px;
+}
+
+@media (max-width: 2000px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+/* - - - - - - - - - - - MY CLASSES - - - - - - - - - - */
+
+.container {
+  margin: 40px auto;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
+
+.card > ul > li {
+  margin: auto;
+  text-align: justify;
+}
+
+.easter-egg {
+  position: relative;
+  background-color: #6B72E1;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.easter-egg .warning {
+  visibility: hidden;
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin: 3px;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.easter-egg .warning::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: red transparent transparent transparent;
+}
+
+.easter-egg:hover .warning {
+  visibility: visible;
+  opacity: 1;
+}
+/* - - - - - - - - - - - MY IDS - - - - - - - - - - */
+
+#introduction {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  text-align: justify;
+  font-size: 15px;
+  padding: 15px;
+  margin: 5px;
+}
+
+#profile {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+}
+
+#profile:hover {
+  background: url("images/ricardo.png");
+  z-index: 1;
+}
+
+#socials > ul > li {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 25px;
+}
