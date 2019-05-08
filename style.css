@@ -5,6 +5,7 @@ body {
   font-size: 13px;
   font-family: 'Arial';
   letter-spacing: 2px;
+  background-image: url("images/woody_mad.gif")
 }
 
 a {
@@ -62,6 +63,7 @@ audio {
 
 .card {
   background-color: white;
+  opacity: 0.9;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
