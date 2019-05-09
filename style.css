@@ -132,12 +132,12 @@ audio {
   border-radius: 50%;
   background-image: url("images/ricardo.png");
   margin: auto;
-  transition: 1s;
+  transition: 2s ease;
 }
 
 #paunomeucu:hover {
   background-image: url("images/ricardo_milos.gif");
-  transition: 5s;
+  transition: 5s ease;
 }
 
 #socials > ul > li {
