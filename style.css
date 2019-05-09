@@ -132,7 +132,6 @@ audio {
   border-radius: 50%;
   background-image: url("images/ricardo.png");
   margin: auto;
-  transition: 2s ease;
 }
 
 #paunomeucu:hover {
